@@ -14,5 +14,3 @@
 <javac includeantruntime="false" srcdir="." destdir="." classpath="junit-4.10.jar"/>
 </target>
 </project>
-
-
