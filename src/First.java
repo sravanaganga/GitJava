@@ -1,7 +1,10 @@
+import java.util.*;
+
 public class First
  {
-  public int square(int num)
+  public int randomNumber()
    {
-    return num*num;
+    Random num=new Random();
+    return num.nextInt(10);
   }
 }
