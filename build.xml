@@ -1,14 +1,16 @@
 
-<project default="compile">
-    <target name="clean">
-        <delete dir="./build/classes"/>
-        <delete dir="./build"/>
-    </target>
-    <target name="compile" depends="clean">
-        <mkdir dir="./build"/>
-        <mkdir dir="./build/classes"/>
-        <javac includeantruntime="false" srcdir="./src" destdir="./build/classes"/>
-    </target>
+<project default="JUnit" name="JUnit Test Cases">
+<target name="JUnit" depends="compile">
+<junit printsummary="on">
+<test name="FTest"/>
+<classpath>
+<pathelement location="junit-4.10.jar"/>
+<pathelement location="."/>
+</classpath>
+</junit>
+</target>
+<target name="compile">
+<javac includeantruntime="false" srcdir="./src" destdir="." classpath="junit-4.10.jar"/>
+</target>
 </project>
-
 
