@@ -8,13 +8,13 @@
 <pathelement location="."/>
 </classpath>
 </junit>
+<delete file="./First.class"/>
+<delete file="./FTest.class"/>
 </target>
 <target name="compile" depends="clean">
+<delete file="./First.class"/>
+<delete file="./FTest.class"/>
 <javac includeantruntime="false" srcdir="./src" destdir="." classpath="junit-4.10.jar"/>
 <javac includeantruntime="false" srcdir="." destdir="." classpath="junit-4.10.jar"/>
-</target>
-<target name="clean">
-  <delete file="./First.class"/>
-  <delete file="./FTest.class"/>
 </target>
 </project>
