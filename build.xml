@@ -19,5 +19,7 @@
 <target name="clean">
   <delete file="./First.class"/>
   <delete file="./FTest.class"/>
+  <delete file="./result.txt"/>
+  <delete file="./result.xml"/>
 </target>
 </project>
