@@ -2,7 +2,10 @@
 <project default="JUnit" name="JUnit Test Cases">
 <target name="JUnit" depends="compile">
 <junit printsummary="on">
-<test name="FTest"/>
+<test name="FTest" haltonfailure="yes" outfile="result">
+ <formatter type="plain"/>
+ <formatter type="xml"/>
+</test>
 <classpath>
 <pathelement location="junit-4.10.jar"/>
 <pathelement location="."/>
