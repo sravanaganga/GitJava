@@ -4,6 +4,7 @@
 <junit printsummary="on">
 <test name="FTest" haltonfailure="no" outfile="result">
  <formatter type="plain"/>
+ <formatter type="plain"/>
 </test>
 <classpath>
 <pathelement location="junit-4.10.jar"/>
