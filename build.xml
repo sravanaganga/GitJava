@@ -11,7 +11,7 @@
 <delete file="./First.class"/>
 <delete file="./FTest.class"/>
 </target>
-<target name="compile" depends="clean">
+<target name="compile">
 <delete file="./First.class"/>
 <delete file="./FTest.class"/>
 <javac includeantruntime="false" srcdir="./src" destdir="." classpath="junit-4.10.jar"/>
