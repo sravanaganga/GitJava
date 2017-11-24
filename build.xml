@@ -7,14 +7,14 @@
  <formatter type="xml"/>
 </test>
 <classpath>
-<pathelement location="junit-4.10.jar"/>
+<pathelement location="./lib/junit-4.10.jar"/>
 <pathelement location="."/>
 </classpath>
 </junit>
 </target>
 <target name="compile" depends="clean">
-<javac includeantruntime="false" srcdir="./src" destdir="/root/executables" classpath="junit-4.10.jar"/>
-<javac includeantruntime="false" srcdir="./tests" destdir="/root/executables" classpath="junit-4.10.jar"/>
+<javac includeantruntime="false" srcdir="./src" destdir="/root/executables" classpath="./lib/junit-4.10.jar"/>
+<javac includeantruntime="false" srcdir="./tests" destdir="/root/executables" classpath="./lib/junit-4.10.jar"/>
 </target>
 <target name="clean">
   <delete file="/root/executables/First.class"/>
