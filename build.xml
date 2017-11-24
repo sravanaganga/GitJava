@@ -18,6 +18,6 @@
 </target>
 <target name="clean">
   <delete file="./First.class"/>
-  <delete file="./FTest.class"/>
+  <delete file="./TestSuite.class"/>
 </target>
 </project>
