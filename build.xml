@@ -2,7 +2,8 @@
 <project default="JUnit" name="JUnit Test Cases">
 <target name="JUnit" depends="compile">
 <junit printsummary="on">
-<test name="/root/executables/TestSuite" haltonfailure="no" outfile="/root/results/output">
+ <mkdir dir="test-report"/>
+<test name="/root/executables/TestSuite" haltonfailure="no" outfile="./test-report/output">
  <formatter type="plain"/>
  <formatter type="xml"/>
 </test>
