@@ -2,7 +2,7 @@
 <project default="JUnit" name="JUnit Test Cases">
 <target name="JUnit" depends="compile">
 <junit printsummary="on">
-<test name="FTest" haltonfailure="no" outfile="result">
+<test name="TestSuite" haltonfailure="no" outfile="result">
  <formatter type="plain"/>
  <formatter type="xml"/>
 </test>
