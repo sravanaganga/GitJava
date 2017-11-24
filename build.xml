@@ -8,7 +8,7 @@
 </test>
 <classpath>
 <pathelement location="./lib/junit-4.10.jar"/>
-<pathelement location="."/>
+<pathelement location="./lib"/>
 </classpath>
 </junit>
 </target>
