@@ -8,7 +8,7 @@ public class TestSuite {
     {
         First tester = new First();
         
-        // assert statements
+        // assert statements testing in process
         assertEquals(4, tester.randomNumber());
     }
 }
