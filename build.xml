@@ -1,4 +1,3 @@
-
 <project default="JUnit" name="JUnit Test Cases">
 <target name="JUnit" depends="compile">
 <junit printsummary="on">
