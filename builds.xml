@@ -20,5 +20,3 @@
   <delete file="./TestSuite.class"/>
 </target>
 </project>
-
-
