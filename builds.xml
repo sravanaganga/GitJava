@@ -1,4 +1,4 @@
-<project default="JUnit" name="JUnit Test Cases">
+<project default="JUnit" name="JUnit Test Case">
 <target name="JUnit" depends="compile">
 <junit printsummary="on">
 <test name="TestSuite" haltonfailure="no" outfile="output">
