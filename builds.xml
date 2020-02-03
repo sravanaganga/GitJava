@@ -1,0 +1,28 @@
+<project default="JUnit" name="JUnit Test Case">
+<target name="JUnit" depends="compile">
+<junit printsummary="on">
+<test name="TestSuite" haltonfailure="no" outfile="output">
+ <formatter type="plain"/>
+ <formatter type="xml"/>
+</test>
+<classpath>
+<pathelement location="./lib/junit-4.10.jar"/>
+<pathelement location="."/>
+</classpath>
+</junit>
+</target>
+<target name="compile" depends="clean">
+<javac includeantruntime="false" srcdir="./src" destdir="." classpath="./lib/junit-4.10.jar"/>
+<javac includeantruntime="false" srcdir="./tests" destdir="." classpath="./lib/junit-4.10.jar"/>
+</target>
+<target name="clean">
+  <delete file="./First.class"/>
+  <delete file="./TestSuite.class"/>
+</target>
+</project>
+
+
+
+
+
+
